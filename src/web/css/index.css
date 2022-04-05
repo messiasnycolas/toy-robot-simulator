@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&display=swap');
+
+body {
+    font-family: 'BIZ UDGothic', sans-serif;
+    margin: 0;
+    background-color: #111111;
+    text-align: center;
+    font-weight: bold;
+    user-select: none;
+}
+
+#container, #commands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    flex-direction: column;
+}
+
+#commands, #place-select-container, #menu {
+    height: 100px;
+    width: 100%;
+    background-color: darkmagenta;
+}
+
+#menu {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#place-select-container {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+button, select {
+    margin: 5px;
+    border: 0;
+    border-radius: 2px;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+button {
+    background-color: #36082d;
+    color: wheat;
+}
+
+button:hover {
+    background-color: #5e0e4e;
+}
+
+button:active {
+    background-color: #dbd360;
+    color: black;
+}
+ 
+table {
+    margin: 90px;
+}
+
+table, td {
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    background-color: #333333;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+label {
+    margin-left: 20px;
+}

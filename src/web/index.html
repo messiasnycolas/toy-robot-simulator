@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Robot Simulator</title>
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/robot.css">
+    <script src="index.js" type="module"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <span>Toy Robot Simulator</span>
+    </div>
+    <div id="container">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="commands">
+            <label for="command-select">Command
+            <select name="command" id="command-select">
+                <option value="PLACE">PLACE</option>
+                <option value="MOVE">MOVE</option>
+                <option value="LEFT">LEFT</option>
+                <option value="RIGHT">RIGHT</option>
+            </select></label>
+            <button>DO IT</button>
+        </div>
+        <div id="place-select-container">
+            <label for="x-axis-select">X Axis
+            <select name="X" id="x-axis-select" class="place-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></label>
+            <label for="y-axis-select">Y Axis
+            <select name="Y" id="y-axis-select" class="place-select">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select></label>
+            <label for="direction-select">Direction
+            <select name="direction" id="direction-select" class="place-select">
+                <option value="NORTH">NORTH</option>
+                <option value="EAST">EAST</option>
+                <option value="SOUTH">SOUTH</option>
+                <option value="WEST">WEST</option>
+            </select></label>
+        </div>
+       
+    </div>
+
+    <div id="robot">
+        <div id="lantern"></div>
+        <div id="eyes"></div>
+        <div id="left-arm"></div>
+        <div id="right-arm"></div>
+    </div>
+
+</body>
+
+</html>
