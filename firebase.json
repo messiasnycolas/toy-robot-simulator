@@ -1,0 +1,6 @@
+{
+    "hosting": {
+      "site": "toyrobot",
+      "public": "dist"
+    }
+  }
