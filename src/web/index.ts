@@ -59,7 +59,6 @@ function updatePosition(report: string) {
   const HTMLrobot = document.querySelector<HTMLElement>('#robot');
   HTMLrobot.style.display = 'block';
 
-  console.log(`table tr:nth-child(${Number(x) + 1}) td:nth-child(${Number(y) + 1})`);
   document.querySelector<HTMLElement>(`table tr:nth-child(${Number(x) + 1}) td:nth-child(${Number(y) + 1})`)
     .appendChild(HTMLrobot);
 
