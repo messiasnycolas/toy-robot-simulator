@@ -4,7 +4,8 @@
   "description": " simulation of a toy robot moving on a square tabletop",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && cp -r src/web/. dist/web/. && rm dist/web/index.ts",
+    "build": "tsc && cp -r src/web/. dist/web/. && cp -r src/index.html dist && rm dist/web/index.ts",
+    "deploy": "firebase deploy --project toy-robot-simulator-6d672 --only hosting:toyrobotsim",
     "lint": "eslint ./src --ext .ts",
     "lint:fix": "eslint ./src --ext .ts --fix",
     "cli-dev": "ts-node-dev --respawn --transpile-only --exit-child --watch src cli/index.ts",
